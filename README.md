@@ -1,12 +1,18 @@
 # StockProfitCalculator
 
-**Commands to run flask app:**
+Versions
 
-py -m venv env
+App Version Python 3.9.0 Flask 1.1.2
 
-env\Scripts\activate
+Configure and run on local machine
 
-pip install flask
+python -m venv env
+
+env/Scripts/activate
+
+pip install -r requirements.txt
+
+pip install flask-mysqldb
 
 set FLASK_APP=app.py
 
