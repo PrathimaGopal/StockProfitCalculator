@@ -28,13 +28,13 @@ def result():
 		breakeven = (initial_total + buy_commission + sell_commission )/ allotment
 
        	#reprocess calculations for printing
-		print_proceeds = "$%.2f" % proceeds
-		print_cost = "$%.2f" % cost
-		print_total = str(allotment) + " x $" + str(initial_share_price) + " = %.2f" % initial_total
-		print_gain = str(capital_tax_rate) + "% of $" + "%.2f" % total_tax + " = %.2f" % tax
-		print_net_profit = "$" + "%.2f" % net_profit
-		print_return_on_investment = "%.2f" % return_on_investment + "%"
-		print_breakeven = "$" + "%.2f" % breakeven
+		print_proceeds = "${:,.2f}".format(proceeds)
+		print_cost = "${:,.2f}".format(cost)
+		print_total = str(allotment) + " x $" + str(initial_share_price) + " = {:,.2f}".format(initial_total)
+		print_gain = str(capital_tax_rate) + "% of $" + "{:,.2f}".format(total_tax )+ " = {:,.2f}".format(tax)
+		print_net_profit = "$" + "{:,.2f}".format(net_profit)
+		print_return_on_investment = "{:,.2f}".format(return_on_investment) + "%"
+		print_breakeven = "$" + "{:,.2f}".format(breakeven)
 
 		tempData = {'ticketSymbol': symbol, 'allotment': allotment,
                    'final_share_price': final_share_price, 'sell_commission':sell_commission,
