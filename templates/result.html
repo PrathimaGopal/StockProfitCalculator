@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<title>Stock Profit Calculator - Results page</title>
+</head>
+<body>
+    <h1>Stock Profit Calculator</h1>
+    <form action="/" method="POST">
+      <table>
+        <tbody>
+          <tr>
+             <h4>Compute Your Profit: </h4><br>
+
+              Ticket Symbol:<br>  {{ticketSymbol}}<br><br>
+
+              Allotment: <br> {{allotment}}<br><br>
+
+              Final Share Price: <br>  {{final_share_price}}<br><br>
+
+              Sell Commission: <br>  {{sell_commission}}<br><br>
+
+              Initial Share Price: <br> {{initial_share_price}} <br><br>
+
+              Buy Commission: <br> {{buy_commission}}<br><br>
+
+              Capital Gain Rate(%): <br> {{capital_tax_rate}}<br><br>
+
+              <h4>PROFIT REPORT: </h4>
+              Proceeds<br> {{print_proceeds}}<br><br>
+
+              Cost<br> {{print_cost}}<br><br>
+
+              Cost Details: <br>
+
+              Total purchase Price &nbsp;<br> {{print_total}} <br>
+
+              Buy Commission = &nbsp; {{buy_commission}}<br>
+              Sell Commission = &nbsp;  {{sell_commission}}<br>
+              Tax on Capital Gain = &nbsp;  {{print_gain}}<br><br><br>
+
+              Net profit<br> {{print_net_profit}}<br><br>
+
+              Return on Investment<br> {{print_return_on_investment}}<br><br>
+
+              To break even, you should have a final share price of <br>  {{print_breakeven}}<br><br>
+            </td>
+          </tr>
+   </body>
+   <footer>
+  <link rel="stylesheet" href="footer.css">
+  <p>Submitted by: Prathima Gopal (ID: 014545375)</p>
+</footer>
+</html>
+

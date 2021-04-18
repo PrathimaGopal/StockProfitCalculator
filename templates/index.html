@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Stock Profit Calculator - Inputs page</title>
+</head>
+   <body>
+    <h1> Enter the details to compute your profit: </h1>
+      <form action = "http://localhost:5000/result" method = "POST">
+         <p>Stock Symbol <input type = "text" name = "symbol" required /></p>
+         <p>Allotment (No. of shares)<input type = "number" name = "allotment" required/></p>
+         <p>Final Share Price $<input type = "number" name = "final_share_price"required/></p> 
+         <p>Sell Commission $<input type = "number" name = "sell_commission" required/></p>
+         <p>Initial Share Price $<input type = "number" name = "initial_share_price" required/></p>
+         <p>Buy Commission $<input type = "number" name = "buy_commission" required/></p>
+         <p>Captial gain tax rate (%)<input type ="number" name = "capital_tax_rate" required min="1" max="40"/></p>
+         <p><input type = "submit" value = "Submit" /></p>
+      </form>
+   </body>
+   <footer>
+  <link rel="stylesheet" href="footer.css">
+  <p>Submitted by: Prathima Gopal (ID: 014545375)</p>
+</footer>
+</html>
+
