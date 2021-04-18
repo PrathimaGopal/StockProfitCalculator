@@ -1,10 +1,10 @@
 # StockProfitCalculator
 
-Versions
+**Versions
 
 App Version Python 3.9.0 Flask 1.1.2
 
-Configure and run on local machine
+**Configure and run on local machine
 
 python -m venv env
 
